@@ -3,7 +3,15 @@
   <head>
     <meta charset="utf-8">
     <title>Intro to AJAX Practice Tasks</title>
-    <script src="src/index.js" charset="utf-8"></script>
+    <script defer src="src/index.js" charset="utf-8"></script>
+    
+    <style>
+    /*  image{
+        display: inline-block;
+        height: 100px;
+        width: 100px;
+      }*/
+    </style>
   </head>
   <body>
     <h1>Dog CEO</h1>
@@ -14,7 +22,7 @@
 
     <hr>
     <label for="select-breed">Filter Breeds That Start with:</label>
-    <select id="breed-dropdown" name="select-breed">
+    <select id="breed-dropdown" name="select-breed" onChange="filterBreeds(this);">
       <option value="a">a</option>
       <option value="b">b</option>
       <option value="c">c</option>
@@ -24,6 +32,5 @@
     <ul id="dog-breeds">
 
     </ul>
-
   </body>
 </html>

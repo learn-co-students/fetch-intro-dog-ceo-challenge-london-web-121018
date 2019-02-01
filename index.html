@@ -3,12 +3,35 @@
   <head>
     <meta charset="utf-8">
     <title>Intro to AJAX Practice Tasks</title>
-    <script src="src/index.js" charset="utf-8"></script>
+    <script defer src="src/index.js" charset="utf-8"></script>
+    <style media="screen">
+
+      .change-font-color {
+        -webkit-animation: color-change 2s infinite;
+        animation: color-change 2s infinite;
+      }
+
+      @-webkit-keyframes color-change {
+        0% { color: #5BC8AC; }
+        50% { color: #E6D72A; }
+        100% { color: #F18D9E; }
+      }
+      @keyframes color-change {
+        0% { color: #5BC8AC; }
+        50% { color: #E6D72A; }
+        100% { color: #F18D9E; }
+      }
+
+      .hide {
+        display: none;
+      }
+
+    </style>
   </head>
   <body>
     <h1>Dog CEO</h1>
 
-    <div id="dog-image-container">
+    <div id="dog-image-container" class="dog-image-container">
       <!-- images here -->
     </div>
 
